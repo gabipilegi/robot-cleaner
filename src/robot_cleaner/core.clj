@@ -30,5 +30,5 @@
     Cleaned: <number of unique cleaned positions>
     ```"
   [& args]
-  (println "Give me cleaning instructions")
+  (println "\nGive me cleaning instructions")
   (run-cleaner!))
