@@ -1,5 +1,13 @@
 (ns robot-cleaner.core
-  (:gen-class))
+  (:gen-class)
+  (:require [robot-cleaner.io :as io]
+            [robot-cleaner.logic.clean :as logic.clean]))
+
+(defn run-cleaner! []
+  (-> (io/read!)
+      (logic.clean/clean-plan->unique-cleaned-positions)
+      count
+      (io/write!)))
 
 (defn -main
   "This program:
@@ -22,4 +30,5 @@
     Cleaned: <number of unique cleaned positions>
     ```"
   [& args]
-  (println "Not implemented"))
+  (println "Give me cleaning instructions")
+  (run-cleaner!))
