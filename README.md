@@ -1,5 +1,5 @@
 # Robot Cleaner :robot:
-* [Running This Program] (#running-this-program)
+* [Running This Program](#running-this-program)
 * [Backgroung](#background)
 * [Assignment](#assignment)
 * [Input and Output Criteria](#input-and-output-criteria)
