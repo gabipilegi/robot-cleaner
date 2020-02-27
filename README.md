@@ -1,5 +1,8 @@
 # Robot Cleaner :robot:
-* [Running This Program](#running-this-program)
+* [This Program](#this-program)
+	- [Preconditions](#preconditions)
+	- [Running](#running)
+	- [Tests](#tests)
 * [Backgroung](#background)
 * [Assignment](#assignment)
 * [Input and Output Criteria](#input-and-output-criteria)
@@ -8,9 +11,9 @@
 * [Example Input](#example-input)
 * [Example Output](#example-output)
 
-## Running This Program
+## This Program
 
-### Precondition
+### Preconditions
 [Leiningen](https://leiningen.org/) installed and configured in path
 
 ### Running
@@ -29,6 +32,10 @@ Give me cleaning instructions
 Insert input in separated lines following [input
 criteria](#input-and-output-criteria)
 
+### Tests
+```
+lein test
+```
 ## Background
 
 When you have a lot of people working in an office it can get dirty quite quickly if you're not careful. However, cleaning staff are expensive. To save money on cleaning staff the best solution was deemed to be the creation of an automatic cleaning robot that cleans the office at night.
