@@ -1,4 +1,33 @@
 # Robot Cleaner :robot:
+* [Running This Program](#running-this-program)
+* [Backgroung](#background)
+* [Assignment](#assignment)
+* [Input and Output Criteria](#input-and-output-criteria)
+* [Special Notes](#special-notes)
+* [The Output](#the-output)
+* [Example Input](#example-input)
+* [Example Output](#example-output)
+
+## Running This Program
+
+### Precondition
+[Leiningen](https://leiningen.org/) installed and configured in path
+
+### Running
+```
+lein run
+```
+
+After this output:
+```
+:repositories detected in user-level profiles! [:user]
+See https://github.com/technomancy/leiningen/wiki/Repeatability
+
+Give me cleaning instructions
+```
+
+Insert input in separated lines following [input
+criteria](#input-and-output-criteria)
 
 ## Background
 
