@@ -4,5 +4,5 @@
 
 (deftest run-cleaner!
   (testing "With input"
-    (is (= "=> Cleaned: 3\n"
+    (is (= "=> Cleaned: 4\n"
            (with-out-str (with-in-str "2\n10 22\nE 2\nN 1" (core/run-cleaner!)))))))
