@@ -1,6 +1,6 @@
 (ns robot-cleaner.logic.clean)
 
-(defn- bar
+(defn- compass-direction->direction+direction-fn
   [compass-direction]
   (case compass-direction
     :N {:direction :y :direction-fn +}
@@ -12,7 +12,8 @@
   [initial-position
    {:keys [compass-direction number-of-steps]}]
   (let [positions                        (map inc (range number-of-steps))
-        {:keys [direction direction-fn]} (bar compass-direction)]
+        {:keys [direction
+                direction-fn]} (compass-direction->direction+direction-fn compass-direction)]
     (map (fn [position]
            (update
             initial-position
